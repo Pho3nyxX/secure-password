@@ -1,0 +1,140 @@
+/* Secure Password Website*/
+/* Author: Abi Matthews-Gordon */
+
+/* --------------------------------- */
+/*          1. General */
+/* --------------------------------- */
+:root {
+    --text: #040316;
+    --background: #fbfbfe;
+    --primary: #139090;
+    --secondary: #ae1acb;
+    --accent: #bb72ca;
+    --error: #E63329;
+
+    --form-bg: #CDE6E8;
+
+    --input-field-bg: #cad5e3;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body.full-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-height: 100%;
+    overflow: hidden;
+
+    .main {
+        overflow: scroll;
+        height: 100%;
+    }
+}
+
+.pink-text {
+    color: var(--accent);
+}
+
+.btn-green {
+    background-color: var(--primary);
+    color: var(--text);
+
+    &:hover {
+        background-color: var(--primary);
+        color: var(--text);
+    }
+}
+
+/* --------------------------------- */
+/*              Typography */
+/* --------------------------------- */
+/*headings*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text);
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.78;
+    color: var(--text);
+}
+
+
+
+/* --------------------------------- */
+/*           1. REGISTRATION PAGE */
+/* --------------------------------- */
+.registration-page {
+
+    .auth-form-container {
+        background: var(--form-bg);
+        position: relative;
+        border: none;
+
+        h3 {
+            margin-bottom: 41px;
+        }
+
+        label.form-label {
+            color: var(--text);
+        }
+
+        input.form-control {
+            background-color: var(--input-field-bg);
+            width: 343px;
+            height: 45px;
+        }
+
+        [type=submit] {
+            border: none;
+            width: 343px;
+            height: 45px;
+        }
+    }
+}
+
+
+
+
+/* --------------------------------- */
+/*           2. PROFILE PAGE */
+/* --------------------------------- */
