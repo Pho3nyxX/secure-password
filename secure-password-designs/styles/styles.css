@@ -12,6 +12,7 @@
     --accent: #bb72ca;
     --error: #E63329;
 
+    --primary-20: #b2d5d6;
     --form-bg: #CDE6E8;
 
     --input-field-bg: #cad5e3;
@@ -53,10 +54,22 @@ body.full-page {
 .btn-green {
     background-color: var(--primary);
     color: var(--text);
+    border-radius: 8px !important;
 
     &:hover {
         background-color: var(--primary);
         color: var(--text);
+    }
+}
+
+.btn-green-border{
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    padding: 9px 32px;
+
+
+    &:hover{
+        border-color: var(--primary);
     }
 }
 
@@ -107,8 +120,6 @@ span {
     color: var(--text);
 }
 
-
-
 /* --------------------------------- */
 /*           1. REGISTRATION PAGE */
 /* --------------------------------- */
@@ -116,7 +127,7 @@ span {
 
     .auth-form-container {
         background: var(--form-bg);
-        position: relative;
+        /* position: relative; */
         border: none;
 
         h3 {
@@ -145,6 +156,42 @@ span {
     background-color: var(--input-field-bg);
     border: none;
 }
+/* --------------------------------- */
+/*           2. VAULT PAGE */
+/* --------------------------------- */
+.vault{
+
+    .warning-container{
+        background-color: var(--form-bg);
+        border: none;
+        padding: 22px 60px;
+
+        .delete-container{
+            margin-bottom: 20px;
+
+            i{
+                font-size: 50px;
+                color: var(--accent);
+            }
+        }
+    }
+
+    .buttons-container{
+        background-color: var(--primary-20);
+        padding: 12px 29px;
+        display: flex;
+
+        div:first-child{
+            margin-right: 20px;
+
+            [type=button]{
+                padding: 10px 32px;
+            }
+        }
+    }
+}
+
+
 
 
 
