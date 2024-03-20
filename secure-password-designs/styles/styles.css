@@ -46,6 +46,10 @@ body.full-page {
     color: var(--accent);
 }
 
+.green-text {
+    color: var(--primary);
+}
+
 .btn-green {
     background-color: var(--primary);
     color: var(--text);
@@ -67,6 +71,7 @@ h4,
 h5,
 h6 {
     color: var(--text);
+    font-weight: bold;
 }
 
 h1 {
@@ -130,6 +135,11 @@ p {
             height: 45px;
         }
     }
+}
+
+.register-check:checked {
+    background-color: var(--input-field-bg);
+    border: none;
 }
 
 
