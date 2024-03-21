@@ -62,15 +62,31 @@ body.full-page {
     }
 }
 
-.btn-green-border{
+.btn-green-border {
     border: 2px solid var(--primary);
     border-radius: 8px;
-    padding: 9px 32px;
 
-
-    &:hover{
+    &:hover {
         border-color: var(--primary);
     }
+}
+
+.form-vault {
+    background-color: var(--form-bg);
+    padding: 43px 37px;
+}
+
+label.form-label {
+    color: var(--text);
+}
+
+input.form-control,
+select,
+input-group.form-control {
+    background-color: var(--input-field-bg);
+    width: 343px;
+    height: 45px;
+    border: none;
 }
 
 /* --------------------------------- */
@@ -134,16 +150,6 @@ span {
             margin-bottom: 41px;
         }
 
-        label.form-label {
-            color: var(--text);
-        }
-
-        input.form-control {
-            background-color: var(--input-field-bg);
-            width: 343px;
-            height: 45px;
-        }
-
         [type=submit] {
             border: none;
             width: 343px;
@@ -156,37 +162,75 @@ span {
     background-color: var(--input-field-bg);
     border: none;
 }
-/* --------------------------------- */
-/*           2. VAULT PAGE */
-/* --------------------------------- */
-.vault{
 
-    .warning-container{
+/* --------------------------------- */
+/*           2. VAULT  */
+/* --------------------------------- */
+.vault {
+
+    .warning-container {
         background-color: var(--form-bg);
         border: none;
         padding: 22px 60px;
 
-        .delete-container{
+        .delete-container {
             margin-bottom: 20px;
 
-            i{
+            i {
                 font-size: 50px;
                 color: var(--accent);
             }
         }
     }
 
-    .buttons-container{
+    .buttons-container {
         background-color: var(--primary-20);
         padding: 12px 29px;
         display: flex;
 
-        div:first-child{
+        div:first-child {
             margin-right: 20px;
 
-            [type=button]{
+            [type=button] {
                 padding: 10px 32px;
             }
+        }
+
+        div:last-child {
+
+            [type=button] {
+                padding: 9px 32px;
+            }
+        }
+    }
+
+    .title-container {
+        background-color: var(--primary-20);
+        padding: 20px 230px;
+    }
+
+    .form-vault {
+
+        .input-group-text {
+            background-color: #bdc6d1;
+        }
+
+        textarea.form-control {
+            background-color: var(--input-field-bg);
+        }
+    }
+
+    .vault-btn-container {
+        background-color: var(--primary-20);
+        padding: 12px 29px;
+        display: flex;
+
+        .generate, .save {
+            margin-right: 17px;
+        }
+        
+        [type=button] {
+            padding: 15px 40px;
         }
     }
 }
