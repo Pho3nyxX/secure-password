@@ -222,15 +222,42 @@ span {
 
     .vault-btn-container {
         background-color: var(--primary-20);
-        padding: 12px 29px;
+        padding: 12px 69px 12px 48px;
         display: flex;
 
-        .generate, .save {
+        .generate,
+        .save {
             margin-right: 17px;
         }
-        
+
         [type=button] {
             padding: 15px 40px;
+        }
+
+        .buttons {
+            display: flex;
+        }
+
+        .icons {
+            display: flex;
+            font-size: 20px;
+
+            >div:first-child {
+                a {
+                    color: var(--primary);
+                    margin-right: 18px;
+                }
+            }
+            
+            >div:last-child {
+                a {
+                    color: var(--error);
+                }
+            }
+
+            &.create {
+                color: var(--primary);
+            }
         }
     }
 }
