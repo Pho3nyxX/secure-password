@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaults</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body class="full-page">
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <header class="row ms-0 me-0 header d-flex justify-content-evenly">
+            <div class="container header-container align-items-center d-flex justify-content-center">
+                <div class="image-container">
+                    <img src="" alt="">
+                </div>
+                <h4>Secure Password</h4>
+            </div>
+        </header>
+
+        <div class="lists-container">
+            <ul class="links-container ps-0">
+                <!-- vaults -->
+                <li>
+                    <div class="link">
+                        <a href="#">
+                            <i class="bi bi-safe"></i>
+                            <span class="text-white">Vaults</span>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="ps-0">
+                        <a href="">
+                            <li class="text-white">Private</li>
+                        </a>
+                        <a href="">
+                            <li class="text-white">Shared</li>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- tools -->
+                <li>
+                    <div class="link">
+                        <a href="#">
+                            <i class="bi bi-tools"></i>
+                            <span class="text-white">Tools</span>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="ps-0">
+                        <a href="">
+                            <li class="text-white">Generator</li>
+                        </a>
+                        <a href="">
+                            <li class="text-white">Import data</li>
+                        </a>
+                        <a href="">
+                            <li class="text-white">Export data</li>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- account -->
+                <li>
+                    <div class="link">
+                        <a href="#">
+                            <i class="bi bi-person"></i>
+                            <span class="text-white">Account</span>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="ps-0">
+                        <a href="">
+                            <li class="text-white">My account</li>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- settings -->
+                <li>
+                    <div class="link">
+                        <a href="#">
+                            <i class="bi bi-gear"></i>
+                            <span class="text-white">Settings</span>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="ps-0">
+                        <a href="">
+                            <li class="text-white">Security</li>
+                        </a>
+                        <a href="">
+                            <li class="text-white">Preferences</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="all-vaults main">
+
+        <!-- heading & button -->
+        <div class="row justify-content-between title-container">
+            <div class="col">
+                <h1 class="green-text">Vaults</h1>
+            </div>
+
+            <div class="col text-center">
+                <a href="#">Create New</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 filters">
+                <!-- search -->
+                <div class="search-container">
+                    <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                </div>
+
+                <!-- favorite -->
+                <div class="filter-container filter-item">
+                    <i class="bi bi-star"></i>
+                    <h6><a href="#">Favorite</a></h6>
+                </div>
+
+                <!-- categories -->
+                <div class="filter-container filter-item">
+                    <i class="bi bi-grid"></i>
+                    <h6><a href="#">Favorite</a></h6>
+                </div>
+
+                <!-- groups -->
+                <div class="filter-container filter-item">
+                    <i class="bi bi-people"></i>
+                    <h6><a href="#">Favorite</a></h6>
+                </div>
+
+                <!-- <div>
+                    <i class="bi bi-grid"></i>
+                    <select class="filter-item mt-2" aria-label="Default select example">
+                        <option selected>Categories</option>
+                        <option value="1">Password</option>
+                        <option value="2">Credit Card</option>
+                        <option value="3">Document</option>
+                        <option value="3">Bank Account</option>
+                        <option value="3">Database</option>
+                        <option value="3">Drivers License</option>
+                        <option value="3">Email account</option>
+                        <option value="3">Membership</option>
+                        <option value="3">Passport</option>
+                        <option value="3">Server</option>
+                        <option value="3">Router</option>
+                    </select>
+                </div> -->
+
+                <!-- <div>
+                    <i class="bi bi-people"></i>
+                    <select class="filter-item mt-2" aria-label="Default select example">
+                        <option selected>Groups</option>
+                        <option value="1">--</option>
+                        <option value="2">--</option>
+                        <option value="3">--</option>
+                    </select>
+                </div> -->
+
+                <!-- trash -->
+                <div class="filter-container filter-item">
+                    <i class="bi bi-trash"></i>
+                    <h6><a href="#">Trash</a></h6>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <!-- headings -->
+                <div class="row">
+                    <div class="col title d-flex justify-content-between">
+                        <div class="d-flex">
+                            <i class="bi bi-square"></i>
+                            <h4>All</h4>
+                        </div>
+                        <div>
+                            <h4>Name</h4>
+                        </div>
+                        <div>
+                            <h4>Owned by</h4>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- content -->
+                <div class="row">
+                    <div class="col vault-list d-flex justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div>
+                            <span>Gmail</span>
+                        </div>
+                        <div>
+                            <span>Me</span>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col vault-list d-flex justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div>
+                            <span>Gmail</span>
+                        </div>
+                        <div>
+                            <span>Me</span>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col vault-list d-flex justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div>
+                            <span>Gmail</span>
+                        </div>
+                        <div>
+                            <span>Me</span>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col vault-list d-flex justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div>
+                            <span>Gmail</span>
+                        </div>
+                        <div>
+                            <span>Me</span>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col vault-list d-flex justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div>
+                            <span>Gmail</span>
+                        </div>
+                        <div>
+                            <span>Me</span>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col vault-list d-flex justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div>
+                            <span>Gmail</span>
+                        </div>
+                        <div>
+                            <span>Me</span>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col vault-list d-flex justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div>
+                            <span>Gmail</span>
+                        </div>
+                        <div>
+                            <span>Me</span>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col vault-list d-flex justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div>
+                            <span>Gmail</span>
+                        </div>
+                        <div>
+                            <span>Me</span>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col vault-list d-flex justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div>
+                            <span>Gmail</span>
+                        </div>
+                        <div>
+                            <span>Me</span>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../scripts/site.js"></script>
+</body>
+
+</html>

@@ -10,8 +10,11 @@
     --background: #fbfbfe;
     --primary: #139090;
     --secondary: #ae1acb;
+    --secondary-60: #ce76e0;
     --accent: #bb72ca;
     --accent-80: #a09ec1;
+    --accent-40: #2d7b91;
+    --accent-25: #f7f2f9;
     --error: #E63329;
 
     --black-25: #cccdcd;
@@ -20,6 +23,7 @@
     --form-bg: #CDE6E8;
 
     --input-field-bg: #cad5e3;
+    --vertical-line: #ddb8e4;
 }
 
 
@@ -42,8 +46,9 @@ body.full-page {
     overflow: hidden;
 
     .main {
-        overflow: scroll;
+        /* overflow: scroll; */
         height: 100%;
+        flex-grow: 1;
     }
 }
 
@@ -170,6 +175,7 @@ span {
 /* --------------------------------- */
 /*           2. VAULT  */
 /* --------------------------------- */
+/* create, edit & delete item */
 .vault {
 
     .warning-container {
@@ -266,6 +272,82 @@ span {
     }
 }
 
+.all-vaults {
+    padding-top: 50px;
+    padding-left: 60px;
+
+    .title-container {
+        display: flex;
+        margin-bottom: 57px;
+
+        >div:last-child {
+            a {
+                background-color: var(--secondary-60);
+                border-radius: 8px;
+                border: none;
+                padding: 15px 30px;
+            }
+        }
+    }
+
+    .filters {
+        border-right: 2px solid var(--vertical-line);
+        margin-right: 15px;
+
+        .search-container {
+            margin-bottom: 45px;
+
+            >input {
+                height: 53px;
+                border-radius: 8px;
+                background-color: var(--accent-25);
+
+                &.form-control {
+                    width: 235px;
+                }
+            }
+        }
+
+        .filter-container {
+            display: flex;
+
+            i {
+                color: var(--accent);
+                margin-right: 5px;
+            }
+
+            h6 {
+                line-height: 1.5;
+            }
+
+            &.filter-item {
+                margin-bottom: 49px;
+            }
+        }
+    }
+
+    .title {
+        padding-bottom: 5px;
+        border-bottom: 1px solid var(--accent);
+        margin-bottom: 15px;
+
+        >:first-child {
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .vault-list{
+        margin-bottom: 20px;
+        >div:first-child{
+            input{
+                border-color: var(--black-25);
+            }
+        }
+    }
+}
+
 /* --------------------------------- */
 /*           3. PROFILE PAGE */
 /* --------------------------------- */
@@ -274,6 +356,7 @@ span {
     height: 100%;
     width: 294px;
     background-color: var(--primary);
+    flex-grow: 0;
 
     .header {
         display: inline-block;
@@ -328,23 +411,29 @@ span {
                         }
                     }
 
-                    >a:last-child {
+                    >a:last-child {}
 
-                    }
-
-                    &:hover{
+                    &:hover {
                         background-color: var(--accent-80);
                     }
                 }
 
-                ul{
+                ul {
                     padding-left: 70px;
 
-                    li{
-                        margin-bottom: 16px;
+                    li {
+                        padding: 12px 70px;
+
+                        &:hover {
+                            background-color: var(--accent-40);
+                        }
                     }
                 }
             }
         }
     }
+}
+
+.main {
+    height: 100%;
 }
