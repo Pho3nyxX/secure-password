@@ -110,6 +110,13 @@ input-group.form-control {
     border: none;
 }
 
+/* .lg-pink-field{
+
+    [type=text]{
+        width: 639px;
+    }
+
+} */
 /* --------------------------------- */
 /*              Typography */
 /* --------------------------------- */
@@ -478,6 +485,31 @@ span {
             margin-bottom: 20px;
         }
     }
+}
+
+.accounts {
+    padding-top: 50px;
+    padding-left: 60px;
+
+    .upload{
+        display: flex;
+
+        img{
+            height: 60px;
+            width: 60px;
+            margin-right: 20px;
+        }
+
+        [type=file]{
+            width: 260px;
+            height: 34px;
+        }
+    }
+
+    [type=text], [type=email]{
+        width: 639px;
+    }
+
 }
 
 /* --------------------------------- */
