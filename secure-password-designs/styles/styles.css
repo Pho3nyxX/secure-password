@@ -283,7 +283,6 @@ span {
 
     .title-container {
         display: flex;
-        /* margin-bottom: 57px; */
 
         >div:last-child {
             a {
@@ -396,7 +395,7 @@ span {
             }
         }
 
-        [type=text]{
+        [type=text] {
             background-color: var(--input-field-bg);
             width: 260px;
         }
@@ -405,23 +404,36 @@ span {
     .options {
         margin-bottom: 48px;
     }
+}
 
-    .btn-container {
-        display: flex;
+.btn-container {
+    display: flex;
 
-        >div:first-child {
-            margin-right: 30px;
+    >div:first-child {
+        margin-right: 30px;
 
-            [type=button] {
-                padding: 10px 32px;
-            }
+        [type=button] {
+            padding: 10px 32px;
         }
+    }
 
-        >div:last-child {
+    >div:last-child {
 
-            [type=button] {
-                padding: 9px 37px;
-            }
+        [type=button] {
+            padding: 9px 37px;
+        }
+    }
+}
+
+.settings {
+    padding-top: 50px;
+    padding-left: 60px;
+
+    .preference-container{
+        margin-bottom: 20px;
+
+        select{
+            width: 639px;
         }
     }
 }
