@@ -92,6 +92,17 @@ body.full-page {
     }
 }
 
+.btn-red {
+    background-color: var(--error);
+    color: var(--text-black);
+    border-radius: 8px !important;
+
+    &:hover {
+        background-color: var(--error);
+        color: var(--text-black);
+    }
+}
+
 .form-vault {
     background-color: var(--form-bg);
     padding: 43px 37px;
@@ -115,8 +126,9 @@ input-group.form-control {
     [type=text]{
         width: 639px;
     }
-
 } */
+
+
 /* --------------------------------- */
 /*              Typography */
 /* --------------------------------- */
