@@ -22,7 +22,8 @@
     --primary-20: #b2d5d6;
     --form-bg: #CDE6E8;
 
-    --input-field-bg: #cad5e3;
+    /* --input-field-bg: #cad5e3; */
+    --input-field-bg: #f9f1fa;
     --vertical-line: #ddb8e4;
 }
 
@@ -272,13 +273,17 @@ span {
     }
 }
 
+.title-container {
+    margin-bottom: 57px;
+}
+
 .all-vaults {
     padding-top: 50px;
     padding-left: 60px;
 
     .title-container {
         display: flex;
-        margin-bottom: 57px;
+        /* margin-bottom: 57px; */
 
         >div:last-child {
             a {
@@ -338,11 +343,79 @@ span {
         }
     }
 
-    .vault-list{
+    .vault-list {
         margin-bottom: 20px;
-        >div:first-child{
-            input{
+
+        >div:first-child {
+            input {
                 border-color: var(--black-25);
+            }
+        }
+    }
+}
+
+.tools {
+    padding-top: 50px;
+    padding-left: 60px;
+
+    .password-reveal-container {
+        background-color: var(--input-field-bg);
+        border-radius: 8px;
+        padding: 54px;
+        display: flex;
+        margin-bottom: 40px;
+
+        a {
+            i {
+                color: var(--black-25);
+            }
+        }
+
+        span {}
+    }
+
+    .password-check-container {
+        margin-bottom: 48px;
+
+        .checks {
+            display: flex;
+
+            >div:first-child {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .password-length-container {
+        margin-bottom: 48px;
+
+        .item {
+
+            select {
+                width: 260px;
+            }
+        }
+    }
+
+    .options {
+        margin-bottom: 48px;
+    }
+
+    .btn-container {
+        display: flex;
+
+        >div:first-child {
+            margin-right: 30px;
+
+            [type=button] {
+                padding: 10px 32px;
+            }
+        }
+
+        >div:last-child {
+
+            [type=button] {
+                padding: 9px 37px;
             }
         }
     }

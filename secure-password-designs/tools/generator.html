@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body class="full-page">
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <header class="row ms-0 me-0 header d-flex justify-content-evenly">
+            <div class="container header-container align-items-center d-flex justify-content-center">
+                <div class="image-container">
+                    <img src="" alt="">
+                </div>
+                <h4>Secure Password</h4>
+            </div>
+        </header>
+
+        <div class="lists-container">
+            <ul class="links-container ps-0">
+                <!-- vaults -->
+                <li>
+                    <div class="link">
+                        <a href="#">
+                            <i class="bi bi-safe"></i>
+                            <span class="text-white">Vaults</span>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="ps-0">
+                        <a href="">
+                            <li class="text-white">Private</li>
+                        </a>
+                        <a href="">
+                            <li class="text-white">Shared</li>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- tools -->
+                <li>
+                    <div class="link">
+                        <a href="#">
+                            <i class="bi bi-tools"></i>
+                            <span class="text-white">Tools</span>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="ps-0">
+                        <a href="">
+                            <li class="text-white">Generator</li>
+                        </a>
+                        <a href="">
+                            <li class="text-white">Import data</li>
+                        </a>
+                        <a href="">
+                            <li class="text-white">Export data</li>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- account -->
+                <li>
+                    <div class="link">
+                        <a href="#">
+                            <i class="bi bi-person"></i>
+                            <span class="text-white">Account</span>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="ps-0">
+                        <a href="">
+                            <li class="text-white">My account</li>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- settings -->
+                <li>
+                    <div class="link">
+                        <a href="#">
+                            <i class="bi bi-gear"></i>
+                            <span class="text-white">Settings</span>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="ps-0">
+                        <a href="">
+                            <li class="text-white">Security</li>
+                        </a>
+                        <a href="">
+                            <li class="text-white">Preferences</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="tools main">
+
+        <!-- heading & button -->
+        <div class="row title-container">
+            <div class="col">
+                <h1 class="green-text">Vaults</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8 password-reveal-container">
+                <a href=""><i class="bi bi-copy"></i></a>
+                <span>!@#$%^&*</span>
+            </div>
+        </div>
+
+        <div class="row password-check-container">
+            <div class="col-3">
+                <h6 class="mb-3">Choose what to generate</h6>
+
+                <div class="checks">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <span>Password</span>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <span>Username</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <h6 class="mb-3">Choose password type</h6>
+
+                <div class="checks">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <span>Password</span>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <span>Passphrase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row password-length-container">
+            <div class="col-3 item">
+                <h6 class="mb-3">Character length</h6>
+                <select class="" type="text" aria-label="Default select example">
+                    <option selected>1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                    <option value="3">6</option>
+                    <option value="3">7</option>
+                    <option value="3">8</option>
+                    <option value="3">9</option>
+                    <option value="3">10</option>
+                    <option value="3">11</option>
+                    <option value="3">12</option>
+                    <option value="3">13</option>
+                    <option value="3">14</option>
+                    <option value="3">15</option>
+                </select>
+            </div>
+
+            <div class="col-3 item">
+                <h6 class="mb-3">Minimum numbers</h6>
+                <select class="" type="text" aria-label="Default select example">
+                    <option selected>1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                    <option value="3">6</option>
+                    <option value="3">7</option>
+                    <option value="3">8</option>
+                    <option value="3">9</option>
+                    <option value="3">10</option>
+                    <option value="3">11</option>
+                    <option value="3">12</option>
+                    <option value="3">13</option>
+                    <option value="3">14</option>
+                    <option value="3">15</option>
+                </select>
+            </div>
+
+            <div class="col-3 item">
+                <h6 class="mb-3">Minimum special characters</h6>
+                <select class="" type="text" aria-label="Default select example">
+                    <option selected>1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                    <option value="3">6</option>
+                    <option value="3">7</option>
+                    <option value="3">8</option>
+                    <option value="3">9</option>
+                    <option value="3">10</option>
+                    <option value="3">11</option>
+                    <option value="3">12</option>
+                    <option value="3">13</option>
+                    <option value="3">14</option>
+                    <option value="3">15</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row options">
+            <h6 class="mb-3">Choose from the options below</h6>
+
+            <div class="col-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <span>A - Z</span>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <span>a - z</span>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <span>0 - 9</span>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <span>!@#$%^&*</span>
+                </div>
+            </div>
+        </div>
+
+         <!-- buttons -->
+         <div class="row">
+            <div class="col-5 btn-container">
+                <div>
+                    <button type="button" class="btn btn-green">Regenerate</button>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-green-border">Cancel</button>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../scripts/site.js"></script>
+</body>
+
+</html>
