@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferences</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body class="full-page">
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <header class="row ms-0 me-0 header d-flex justify-content-evenly">
+            <div class="container header-container align-items-center d-flex justify-content-center">
+                <div class="image-container">
+                    <img src="" alt="">
+                </div>
+                <h4>Secure Password</h4>
+            </div>
+        </header>
+
+        <div class="lists-container">
+            <ul class="links-container ps-0">
+                <!-- vaults -->
+                <li>
+                    <div class="link">
+                        <a href="#">
+                            <i class="bi bi-safe"></i>
+                            <span class="text-white">Vaults</span>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="ps-0">
+                        <a href="">
+                            <li class="text-white">Private</li>
+                        </a>
+                        <a href="">
+                            <li class="text-white">Shared</li>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- tools -->
+                <li>
+                    <div class="link">
+                        <a href="#">
+                            <i class="bi bi-tools"></i>
+                            <span class="text-white">Tools</span>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="ps-0">
+                        <a href="">
+                            <li class="text-white">Generator</li>
+                        </a>
+                        <a href="">
+                            <li class="text-white">Import data</li>
+                        </a>
+                        <a href="">
+                            <li class="text-white">Export data</li>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- account -->
+                <li>
+                    <div class="link">
+                        <a href="#">
+                            <i class="bi bi-person"></i>
+                            <span class="text-white">Account</span>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="ps-0">
+                        <a href="">
+                            <li class="text-white">My account</li>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- settings -->
+                <li>
+                    <div class="link">
+                        <a href="#">
+                            <i class="bi bi-gear"></i>
+                            <span class="text-white">Settings</span>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="ps-0">
+                        <a href="">
+                            <li class="text-white">Security</li>
+                        </a>
+                        <a href="">
+                            <li class="text-white">Preferences</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="settings main">
+
+        <!-- heading & button -->
+        <div class="row title-container">
+            <div class="col">
+                <h1 class="green-text">Preferences</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5 preference-container">
+                <h6 class="mb-3">Language</h6>
+                <select class="" type="text" aria-label="Default select example">
+                    <option selected>Select</option>
+                    <option value="1">English</option>
+                    <option value="2">Spanish</option>
+                    <option value="3">French</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5 preference-container">
+                <h6 class="mb-3">Vault timeout</h6>
+                <select class="" type="text" aria-label="Default select example">
+                    <option value="1">1 minute</option>
+                    <option value="2">5 minutes</option>
+                    <option value="3">10 minutes</option>
+                    <option value="4">15 minutes</option>
+                    <option value="5">30 minutes</option>
+                    <option value="6">1 hour</option>
+                    <option value="7">2 hours</option>
+                    <option selected>custom</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 preference-container timeout-container">
+                <h6 class="mb-3">Vault timeout (hours)</h6>
+                <select class="timeout" type="text" aria-label="Default select example">
+                    <option selected>0</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                    <option value="4">3</option>
+                    <option value="5">4</option>
+                    <option value="6">5</option>
+                    <option value="7">6</option>
+                    <option value="8">24</option>
+                </select>
+            </div>
+
+            <div class="col-2 preference-container timeout-container">
+                <h6 class="mb-3">Vault timeout (minutes)</h6>
+                <select class="timeout" type="text" aria-label="Default select example">
+                    <option selected>0</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                    <option value="4">3</option>
+                    <option value="5">4</option>
+                    <option value="6">5</option>
+                    <option value="7">6</option>
+                    <option value="8">24</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5 preference-container">
+                <h6 class="mb-3">Theme</h6>
+                <select class="" type="text" aria-label="Default select example">
+                    <option selected>Select</option>
+                    <option value="2">Light</option>
+                    <option value="1">Dark</option>
+                    <option value="3">Device settings</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- buttons -->
+        <div class="row mt-2">
+            <div class="col-5 btn-container">
+                <div>
+                    <button type="button" class="btn btn-green">Save</button>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-green-border">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../scripts/site.js"></script>
+</body>
+
+</html>

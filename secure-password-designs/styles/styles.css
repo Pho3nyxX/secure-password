@@ -429,11 +429,26 @@ span {
     padding-top: 50px;
     padding-left: 60px;
 
-    .preference-container{
+    .preference-container {
         margin-bottom: 20px;
 
-        select{
+        select {
             width: 639px;
+
+            &.timeout {
+                width: 260px;
+            }
+        }
+
+        &.timeout-container {
+            margin-right: 62px;
+
+            select {
+
+                &.timeout {
+                    width: 310px;
+                }
+            }
         }
     }
 }
