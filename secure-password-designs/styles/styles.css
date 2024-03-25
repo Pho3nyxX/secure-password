@@ -81,6 +81,17 @@ body.full-page {
     }
 }
 
+.btn-pink {
+    background-color: var(--input-field-bg);
+    color: var(--text-black);
+    border-radius: 8px !important;
+
+    &:hover {
+        background-color: var(--input-field-bg);
+        color: var(--text-black);
+    }
+}
+
 .form-vault {
     background-color: var(--form-bg);
     padding: 43px 37px;
@@ -449,6 +460,22 @@ span {
                     width: 310px;
                 }
             }
+        }
+    }
+
+    span{
+        margin-bottom: 32px;
+    }
+
+    [type=password]{
+        width: 639px;
+    }
+
+    .btn-account{
+
+        [type=button]{
+            width: 639px;
+            margin-bottom: 20px;
         }
     }
 }
